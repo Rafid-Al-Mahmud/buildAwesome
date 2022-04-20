@@ -1,0 +1,6 @@
+/logo/ba-logoName-index-quality.type
+auto-initial
+4k-3840(3840 x 2160)
+paint3d-6400(6400 × 6400)
+8k-7680(7680 × 4320)
+16k-15360(15360 × 8640)

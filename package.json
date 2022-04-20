@@ -1,0 +1,31 @@
+{
+  "name": "buildawesome",
+  "version": "1.0.0",
+  "description": "This is a simple chat application.",
+  "main": "index.js",
+  "directories": {
+    "lib": "lib"
+  },
+  "scripts": {
+    "test": "start"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/Rafid-Al-Mahmud/buildAwesome.git"
+  },
+  "keywords": [
+    "chat-app",
+    "chat",
+    "app"
+  ],
+  "author": "Rafid AL Mahmud",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/Rafid-Al-Mahmud/buildAwesome/issues"
+  },
+  "homepage": "https://github.com/Rafid-Al-Mahmud/buildAwesome#readme",
+  "dependencies": {
+    "express": "^4.17.3",
+    "nodemon": "^2.0.15"
+  }
+}
