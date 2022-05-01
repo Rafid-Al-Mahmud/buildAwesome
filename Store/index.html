@@ -6,147 +6,10 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Document</title>
-    <!--<link rel="stylesheet" type="text/css" href="../style.css">-->
+    <link rel="stylesheet" type="text/css" href="./style.css">
     <style>
-        * {
-            box-sizing: border-box;
-            margin: 0;
-            padding: 0;
-        }
-
-        .context-menu {
-            position: fixed;
-            z-index: 10000;
-            width: 150px;
-            background-color: #1b1a1a;
-            transform: scale(0);
-            transform-origin: top left;
-            user-select: none;
-            -ms-content-zooming: zoom;
-        }
-
-        .context-menu.active {
-            transform: scale(1);
-            transition: transform 200ms ease-in-out;
-        }
-
-        .context-menu .item {
-            padding: 8px 10px;
-            font-size: 15px;
-            color: #eee;
-        }
-
-        .context-menu .item:hover {
-            padding: 8px 10px;
-            font-size: 15px;
-            background-color: #555;
-        }
-
-        .context-menu .item i {
-            display: inline-block;
-            margin-right: 5px;
-        }
-
-        .context-menu .item hr {
-            margin: 2px 0px;
-            border-color: #555;
-        }
-
-        .flex-c-center {
-            display: flex;
-            flex-direction: column;
-            justify-content: center;
-        }
-
-        .flex-r-center {
-            display: flex;
-            flex-direction: row;
-            justify-content: center;
-        }
-
-        .product-logo {
-            user-select: none;
-            padding: 0 10px;
-            margin: 0 5px;
-        }
-
-        nav {
-            position: -webkit-sticky;
-            position: sticky;
-            top: 0;
-            -webkit-box-shadow: 20px 20px 80px 10px #00000010;
-            -moz-box-shadow: 20px 20px 80px 10px #00000010;
-            box-shadow: 20px 20px 80px 10px #00000010;
-            display: flex;
-        }
-
-        .tablist {
-            list-style-type: none;
-            display: flex;
-            flex-direction: row;
-            justify-content: space-between;
-            margin: 0px;
-            padding: 0px;
-        }
-
-        .tablist>li {
-            padding: 20px;
-        }
-
-        .tablist>li>a {
-            color: inherit;
-            text-decoration: none;
-        }
-
-        .tablist li a:hover {
-            background-color: #D9EDF7;
-            color: #00A0C6;
-            cursor: pointer;
-        }
-
-        k:hover {
-            color: red;
-            cursor: url(../../lib/5453183.cur) 4 12, initial;
-        }
-
-        .top-nav {
-            display: flex;
-        }
-
-        /* Extra small devices (phones, 0px and up) */
-        @media only screen and (min-width: 0px) {
-            * {
-                font-size: 100%;
-            }
-        }
-
-        /* Small devices (portrait tablets and large phones, 600px and up) */
-        @media only screen and (min-width: 600px) {
-            * {
-                font-size: 100%;
-            }
-        }
-
-        /* Medium devices (landscape tablets, 768px and up) */
-        @media only screen and (min-width: 768px) {
-            * {
-                font-size: 100%;
-            }
-        }
-
-        /* Large devices (laptops/desktops, 992px and up) */
-        @media only screen and (min-width: 992px) {
-            * {
-                font-size: 100%;
-            }
-        }
-
-        /* Extra large devices (large laptops and desktops, 1200px and up) */
-        @media only screen and (min-width: 1200px) {
-            * {
-                font-size: 100%;
-            }
-        }
+    </style>
+    <style>
     </style>
     <meta http-eqiv="refresh" content="0">
 </head>
@@ -178,9 +41,9 @@
     </div>
     <header>
         <nav class="top-nav">
-            <div class="product-logo flex-c-center">
+            <div class="product-logo-container flex-c-center">
+                <img class="product-logo" src="./images/logo/Project 8 (3).png" draggable="false" alt="">
                 <h1>buildAwesome</h1>
-                <img src="./images/logo/Project 8 (3).png" draggable="false" alt="" style="width: 50px;">
             </div>
             <ul class="tablist">
                 <li><a href="">HOME</a></li>
@@ -190,220 +53,186 @@
     </header>
     <main>
         <div class="app">
-            <style>
-                .app>div>div {
-                    width: 25%;
-                    height: 10vh;
-                    overflow: hidden;
-                    display: flex;
-                    flex-direction: row;
-                    align-items: center;
-                    padding: 0px 0;
-                    margin: 10px 0;
-                    border-radius: 20px;
-                    cursor: pointer;
-                }
-
-                .app>div>div>div.app_logo>img {
-                    height: 100%;
-                    animation: lds-grid 1.2s linear infinite;
-                }
-
-                .app>div>div>div {
-                    height: 80%;
-                }
-
-                .app>div>div:hover {
-                    box-shadow: 20px 20px 80px 10px #00000022;
-                }
-
-                @media screen and (max-width:600px) {
-                    .app>div>div {
-                        width: 100%;
-                        height: 10vh;
-                        overflow: hidden;
-                        display: flex;
-                        flex-direction: row;
-                    }
-                }
-            </style>
-            <div style="display:flex;flex-direction: row;flex-wrap: wrap;">
-                <div>
+            <div class="store-apps-card-container">
+                <div class="store-apps-card">
                     <div class="app_logo">
                         <img src="./images/logo/ba-calculator-2-auto.png" alt="&nbsp;Calculator">
                     </div>
                     <div class="app_name">Calculator</div>
                 </div>
-                <div>
+                <div class="store-apps-card">
                     <div class="app_logo">
                         <img src="./images/logo/ba-calender-auto.png" alt="&nbsp;Calculator">
                     </div>
                     <div class="app_name">Calender</div>
                 </div>
-                <div>
+                <div class="store-apps-card">
                     <div class="app_logo">
                         <img src="./images/logo/ba-clock-auto.png" alt="&nbsp;Calculator">
                     </div>
                     <div class="app_name">Clock</div>
                 </div>
-                <div>
+                <div class="store-apps-card">
                     <div class="app_logo">
                         <img src="./images/logo/ba-app-auto.svg" alt="&nbsp;Calculator">
                     </div>
                     <div class="app_name">Assistant</div>
                 </div>
-                <div>
+                <div class="store-apps-card">
                     <div class="app_logo">
-                        <img src="https://upload.wikimedia.org/wikipedia/commons/8/83/Circle-icons-tools.svg" alt="&nbsp;Calculator">
+                        <img src="https://upload.wikimedia.org/wikipedia/commons/8/83/Circle-icons-tools.svg"
+                            alt="&nbsp;Calculator">
                     </div>
                     <div class="app_name">Tools</div>
                 </div>
-                <div>
+                <div class="store-apps-card">
                     <div class="app_logo">
                         <img src="./images/logo/ba-app-auto.svg" alt="&nbsp;Calculator">
                     </div>
                     <div class="app_name">Sites</div>
                 </div>
-                <div>
+                <div class="store-apps-card">
                     <div class="app_logo">
                         <img src="./images/logo/ba-chat_app-auto.svg" alt="&nbsp;Calculator">
                     </div>
                     <div class="app_name">Chat</div>
                 </div>
-                <div>
+                <div class="store-apps-card">
                     <div class="app_logo">
                         <img src="./images/logo/ba-app-auto.svg" alt="&nbsp;Calculator">
                     </div>
                     <div class="app_name">Blogs</div>
                 </div>
-                <div>
+                <div class="store-apps-card">
                     <div class="app_logo">
                         <img src="./images/logo/ba-app-auto.svg" alt="&nbsp;Calculator">
                     </div>
                     <div class="app_name">Madia</div>
                 </div>
-                <div>
+                <div class="store-apps-card">
                     <div class="app_logo">
                         <img src="./images/logo/ba-weather-auto.svg" alt="&nbsp;Calculator">
                     </div>
                     <div class="app_name">Weather</div>
                 </div>
-                <div>
+                <div class="store-apps-card">
                     <div class="app_logo">
                         <img src="./images/logo/ba-app-auto.svg" alt="&nbsp;Calculator">
                     </div>
                     <div class="app_name">Notes</div>
                 </div>
-                <div>
+                <div class="store-apps-card">
                     <div class="app_logo">
                         <img src="./images/logo/ba-app-auto.svg" alt="&nbsp;Calculator">
                     </div>
                     <div class="app_name">Music</div>
                 </div>
-                <div>
+                <div class="store-apps-card">
                     <div class="app_logo">
                         <img src="./images/logo/ba-app-auto.svg" alt="&nbsp;Calculator">
                     </div>
                     <div class="app_name">Photos</div>
                 </div>
-                <div>
+                <div class="store-apps-card">
                     <div class="app_logo">
                         <img src="./images/logo/ba-app-auto.svg" alt="&nbsp;Calculator">
                     </div>
                     <div class="app_name">Translate</div>
                 </div>
-                <div>
+                <div class="store-apps-card">
                     <div class="app_logo">
                         <!-- <img src="https://www.logo.wine/a/logo/Google_Storage/Google_Storage-Logo.wine.svg" alt="&nbsp;Calculator"> -->
-                        <img src="https://download.logo.wine/logo/Google_Storage/Google_Storage-Logo.wine.png" alt="&nbsp;Calculator">
+                        <img src="https://download.logo.wine/logo/Google_Storage/Google_Storage-Logo.wine.png"
+                            alt="&nbsp;Calculator">
                     </div>
                     <div class="app_name">Drive</div>
                 </div>
-                <div>
+                <div class="store-apps-card">
                     <div class="app_logo">
                         <img src="./images/logo/ba-app-auto.svg" alt="&nbsp;Calculator">
                     </div>
                     <div class="app_name">Web Builder</div>
                 </div>
-                <div>
+                <div class="store-apps-card">
                     <div class="app_logo">
-                        <img src="https://upload.wikimedia.org/wikipedia/commons/c/c5/Colorwheel.svg" alt="&nbsp;Calculator">
+                        <img src="https://upload.wikimedia.org/wikipedia/commons/c/c5/Colorwheel.svg"
+                            alt="&nbsp;Calculator">
                     </div>
                     <div class="app_name">Colours</div>
                 </div>
-                <div>
+                <div class="store-apps-card">
                     <div class="app_logo">
                         <img src="./images/logo/ba-app-auto.svg" alt="&nbsp;Calculator">
                     </div>
                     <div class="app_name">Search</div>
                 </div>
-                <div>
+                <div class="store-apps-card">
                     <div class="app_logo">
                         <img src="./images/logo/ba-app-auto.svg" alt="&nbsp;Calculator">
                     </div>
                     <div class="app_name">Workspace</div>
                 </div>
-                <div>
+                <div class="store-apps-card">
                     <div class="app_logo">
                         <img src="./images/logo/ba-app-auto.svg" alt="&nbsp;Calculator">
                     </div>
                     <div class="app_name">Recorder</div>
                 </div>
-                <div>
+                <div class="store-apps-card">
                     <div class="app_logo">
                         <img src="./images/logo/ba-app-auto.svg" alt="&nbsp;Calculator">
                     </div>
                     <div class="app_name">Videos</div>
                 </div>
-                <div>
+                <div class="store-apps-card">
                     <div class="app_logo">
                         <img src="./images/logo/ba-app-auto.svg" alt="&nbsp;Calculator">
                     </div>
                     <div class="app_name">Codes</div>
                 </div>
-                <div>
+                <div class="store-apps-card">
                     <div class="app_logo">
                         <img src="./images/logo/ba-app-auto.svg" alt="&nbsp;Calculator">
                     </div>
                     <div class="app_name">Fonts</div>
                 </div>
-                <div>
+                <div class="store-apps-card">
                     <div class="app_logo">
                         <img src="./images/logo/ba-app-auto.svg" alt="&nbsp;Calculator">
                     </div>
                     <div class="app_name">Meets</div>
                 </div>
-                <div>
+                <div class="store-apps-card">
                     <div class="app_logo">
                         <img src="./images/logo/ba-app-auto.svg" alt="&nbsp;Calculator">
                     </div>
                     <div class="app_name">Bmail</div>
                 </div>
-                <div>
+                <div class="store-apps-card">
                     <div class="app_logo">
                         <img src="./images/logo/ba-app-auto.svg" alt="&nbsp;Calculator">
                     </div>
                     <div class="app_name">Camera</div>
                 </div>
-                <div>
+                <div class="store-apps-card">
                     <div class="app_logo">
                         <img src="./images/logo/ba-app-auto.svg" alt="&nbsp;Calculator">
                     </div>
                     <div class="app_name">School Books BD</div>
                 </div>
-                <div>
+                <div class="store-apps-card">
                     <div class="app_logo">
                         <img src="./images/logo/ba-app-auto.svg" alt="&nbsp;Calculator">
                     </div>
                     <div class="app_name">Maps</div>
                 </div>
-                <div>
+                <div class="store-apps-card">
                     <div class="app_logo">
                         <img src="./images/logo/ba-app-auto.svg" alt="&nbsp;Calculator">
                     </div>
                     <div class="app_name">Joycord</div>
                 </div>
-                <div>
+                <div class="store-apps-card">
                     <div class="app_logo">
                         <img src="./images/logo/calculator_icon1.png" alt="&nbsp;Calculator">
                     </div>
@@ -411,18 +240,18 @@
                 </div>
             </div>
             <script>/*
-                var img = [];
-                for (var i = 0; i <= document.querySelectorAll(".app_logo").length; i++) {
-                    window.img[i] = document.querySelectorAll(".app>div>div>div.app_logo>img")[i].src;
-                    document.querySelectorAll(".app>div>div>div.app_logo>img")[i].src = "https://upload.wikimedia.org/wikipedia/commons/6/67/App_Store_%28iOS%29.svg";
-                    console.log("2nd(" + i + "): \n" + JSON.stringify(img));
-                } console.log("1st: \n" + JSON.stringify(img));
-                setTimeout(() => {
-                    console.log("3rd(" + i + "): \n" + JSON.stringify(img));
-                    for (var i1 = 0; i1 <= document.querySelectorAll(".app_logo").length; i1++) {
-                        document.querySelectorAll(".app>div>div>div.app_logo>img")[i1].src = window.img[i1];
-                    }
-                }, 1000);*/
+var img = [];
+for (var i = 0; i <= document.querySelectorAll(".app_logo").length; i++) {
+    window.img[i] = document.querySelectorAll(".app>div>div>div.app_logo>img")[i].src;
+    document.querySelectorAll(".app>div>div>div.app_logo>img")[i].src = "https://upload.wikimedia.org/wikipedia/commons/6/67/App_Store_%28iOS%29.svg";
+    console.log("2nd(" + i + "): \n" + JSON.stringify(img));
+} console.log("1st: \n" + JSON.stringify(img));
+setTimeout(() => {
+    console.log("3rd(" + i + "): \n" + JSON.stringify(img));
+    for (var i1 = 0; i1 <= document.querySelectorAll(".app_logo").length; i1++) {
+        document.querySelectorAll(".app>div>div>div.app_logo>img")[i1].src = window.img[i1];
+    }
+}, 1000);*/
             </script>
         </div>
         <!-- <iframe src="calculator.html" frameborder="0" style="height: 80vh;width: 100%;"></iframe> -->
@@ -447,7 +276,27 @@
         window.addEventListener("click", () =>
             contextElement.classList.remove("active")
         );
-        document.querySelector(".app>iframe").contentDocument.querySelector("*").style.overflow = "hidden";
+        // document.querySelector(".app>iframe").contentDocument.querySelector("*").style.overflow = "hidden";
+        const l = document.querySelectorAll(".app_logo");
+        for (let i = 0; i < l.length; i++) {
+            l[i].innerHTML += `
+                        <div class="store-overlay"></div>
+            `;
+            l[i].addEventListener("mouseover", () => document.querySelectorAll(".store-overlay")[i].style.display = "block");
+            l[i].addEventListener("mouseout", () => document.querySelectorAll(".store-overlay")[i].style.display = "none");
+            if (document.querySelectorAll(".app_logo>img")[i].naturalHeight > document.querySelectorAll(".app_logo>img")[i].naturalWidth) {
+                document.querySelectorAll(".app_logo>img")[i].style.height = "90%";
+            } else {
+                document.querySelectorAll(".app_logo>img")[i].style.width = "90%";
+            }
+        }
+
+        
+        var root = document.querySelector(':root');
+        cssVarGet=(name)=>getComputedStyle(root).getPropertyValue("--"+name);
+        cssVarSet=(name,value)=>root.style.setProperty("--"+name, value);
+        cssVarSet('innerWidth',innerWidth);alert(cssVarGet("innerWidth"));
+        
     </script>
 </body>
 

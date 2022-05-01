@@ -1,0 +1,282 @@
+:root{
+    --d:"fh"
+}
+* {
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+}
+
+*::selection{
+    background-color: var(d);
+}
+.context-menu {
+    position: fixed;
+    z-index: 10000;
+    width: 150px;
+    /* background-color: #1b1a1a;
+    transform: scale(0);
+    transform-origin: top left;
+    user-select: none;
+    -ms-content-zooming: zoom; */
+    background-color: #fffffffa;
+    transform: scale(0);
+    transform-origin: top left;
+    user-select: none;
+    -ms-content-zooming: zoom;
+    /* box-shadow: 20px 20px 80px 10px #00000022; */
+    box-shadow: 0 1px 6px 0 rgba(32, 33, 36, .28) /*#00000022*/;
+    border-radius: 5px;
+}
+
+.context-menu.active {
+    transform: scale(1);
+    transition: transform 200ms ease-in-out;
+}
+
+.context-menu .item {
+    padding: 8px 10px;
+    font-size: 15px;
+    /* color: #eee; */
+    color: #000;
+}
+
+.context-menu .item:hover {
+    padding: 8px 10px;
+    font-size: 15px;
+    background-color: #5551;
+}
+
+.context-menu .item i {
+    display: inline-block;
+    margin-right: 5px;
+}
+
+.context-menu .item hr {
+    margin: 2px 0px;
+    border-color: #555;
+}
+
+.flex-c-center {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+}
+
+.flex-r-center {
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+}
+
+.product-logo-container {
+    width: 200px;
+    padding: 0 10px;
+    margin: 0 5px;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    align-items: center;
+}
+
+/* Small devices (portrait tablets and large phones, 600px and up) */
+@media only screen and (max-width: 600px) {
+    .product-logo-container {
+        display: flex;
+        flex-direction: column;
+        justify-content: space-between;
+    }
+
+    nav {
+        flex-direction: column;
+        justify-content: center;
+    }
+}
+
+.product-logo {
+    width: 50px;
+}
+
+nav {
+    position: -webkit-sticky;
+    position: sticky;
+    top: 0;
+    -webkit-box-shadow: 20px 20px 80px 10px #00000010;
+    -moz-box-shadow: 20px 20px 80px 10px #00000010;
+    box-shadow: 20px 20px 80px 10px #00000010;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.tablist {
+    list-style-type: none;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    margin: 0px;
+    padding: 0px;
+}
+
+.tablist>li {
+    padding: 20px;
+}
+
+.tablist>li>a {
+    color: inherit;
+    text-decoration: none;
+}
+
+.tablist li a:hover {
+    background-color: #D9EDF7;
+    color: #00A0C6;
+    cursor: pointer;
+}
+
+k:hover {
+    color: red;
+    cursor: url(../../lib/5453183.cur) 4 12, initial;
+}
+
+.top-nav {
+    display: flex;
+}
+
+/* Extra small devices (phones, 0px and up) */
+@media only screen and (min-width: 0px) {
+    * {
+        font-size: 100%;
+    }
+}
+
+/* Small devices (portrait tablets and large phones, 600px and up) */
+@media only screen and (min-width: 600px) {
+    * {
+        font-size: 100%;
+    }
+}
+
+/* Medium devices (landscape tablets, 768px and up) */
+@media only screen and (min-width: 768px) {
+    * {
+        font-size: 100%;
+    }
+}
+
+/* Large devices (laptops/desktops, 992px and up) */
+@media only screen and (min-width: 992px) {
+    * {
+        font-size: 100%;
+    }
+}
+
+/* Extra large devices (large laptops and desktops, 1200px and up) */
+@media only screen and (min-width: 1200px) {
+    * {
+        font-size: 100%;
+    }
+}
+
+.app>div>div>div.app_logo>img {
+    /* width: 160px;
+    height: 160px; */
+    /* animation: lds-grid 1.2s linear infinite; */
+}
+
+.app>div>div>div {
+    /* width: 80%; */
+}
+
+.app>div>div:hover {
+    /* box-shadow: 20px 20px 80px 10px #00000022; */
+    /* box-shadow: 0 1px 6px 0 rgba(32, 33, 36, .28); */
+    box-shadow: none;
+}
+
+
+
+.store-overlay {
+    position: absolute;
+    display: none;
+    width: 100%;
+    height: 100%;
+    top: 0;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    background-color: rgba(0, 0, 0, 0.4);
+    z-index: 2;
+    cursor: pointer;
+}
+
+.store-overlay-content {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    font-size: 50px;
+    color: white;
+    -ms-transform: translate(-50%, -50%);
+    transform: translate(-50%, -50%);
+}
+
+.store-apps-card-container {
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    justify-content: space-between;
+}
+
+.store-apps-card {
+    width: 170px;
+    height: 255px;
+    overflow: hidden;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    padding: 0px 0;
+    margin: 10px 10px;
+    border: 1px solid #5551;
+    border-radius: 10px;
+    cursor: pointer;
+    transition: all 0.3;
+    /* box-shadow: 0 1px 1px 0 rgba(32, 33, 36, .28); */
+}
+
+.store-apps-card>.app_logo {
+    /* width: 160px;
+    height: 160px;
+    position: relative; */
+    width: 100%;
+    height: 160px;
+    position: relative;
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    align-items: center;
+    flex-wrap: wrap;
+    align-content: center;
+}
+
+.store-apps-card>.app_name {
+    /* width: 160px;
+    height: 100%; */
+    width: 100%;
+    height: 95px;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    flex-wrap: no-wrap;
+    align-content: initial;
+}
+
+@media screen and (max-width:600px) {
+    .store-apps-card {
+        width: 100%;
+        height: 10vh;
+        flex-direction: row;
+    }
+    .store-apps-card.app_logo{
+
+    }
+}

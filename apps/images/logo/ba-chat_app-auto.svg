@@ -1,0 +1,81 @@
+<?xml version="1.0" encoding="utf-8"?>
+<svg
+	version="1.1"
+	xmlns="http://www.w3.org/2000/svg"
+	xmlns:xlink="http://www.w3.org/1999/xlink"
+	x="0%" y="0%"
+	width="100%" height="100%"
+	viewBox="0 0 1.6E7 1.6E7"
+	enable-background="new 0 0 1.6E7 1.6E7"
+	xml:space="preserve">
+	<patgh
+		fill="#FFFFFF"
+		stroke="#000000"
+		fill-opacity="1.000"
+		stroke-opacity="1.000"
+		fill-rule="nonzero"
+		stroke-width="160000.0"
+		stroke-linejoin="miter"
+		stroke-linecap="square"
+		d="M0.95,-15999999.00L16000000.00,-15999999.00L16000000.00,-1.43L1.43,-1.43z"/>
+	<path
+		fill="#FBF7FF"
+		stroke="#00ADFF"
+		fill-opacity="1.000"
+		stroke-opacity="1.000"
+		fill-rule="nonzero"
+		stroke-width="0.0"
+		stroke-linejoin="round"
+		stroke-linecap="square"
+		d="M7793206.50,1357871.00C11778852.00,1357871.50,15009857.00,4504948.50,15009857.00,8387066.00C15009857.00,12269183.00,11778852.00,15416262.00,7793206.50,15416262.00C3807560.75,15416262.00,576555.75,12269183.00,576555.75,8387065.00C576555.75,4504948.50,3807561.25,1357870.63,7793206.50,1357871.00z"/>
+	<path
+		fill="#8800FF"
+		stroke="#00ADFF"
+		fill-opacity="1.000"
+		stroke-opacity="1.000"
+		fill-rule="nonzero"
+		stroke-width="80000.0"
+		stroke-linejoin="miter"
+		stroke-linecap="square"
+		d="M7793207.00,3944456.50C10246794.00,3944456.00,12235819.00,5933480.50,12235819.00,8387066.00C12235819.00,10840652.00,10246794.00,12829676.00,7793207.00,12829676.00C5339620.00,12829676.00,3350595.50,10840652.00,3350595.50,8387066.00C3350596.00,5933480.50,5339620.00,3944456.50,7793207.00,3944456.50z"/>
+	<path
+		fill="#8800FF"
+		stroke="#00ADFF"
+		fill-opacity="1.000"
+		stroke-opacity="1.000"
+		fill-rule="nonzero"
+		stroke-width="80000.0"
+		stroke-linejoin="miter"
+		stroke-linecap="square"
+		d="M6617237.00,12596604.00Q4322967.50,15370195.00,4888853.00,11741104.00"/>
+	<path
+		fill="#FFFFFF"
+		stroke="#00ADFF"
+		fill-opacity="1.000"
+		stroke-opacity="1.000"
+		fill-rule="nonzero"
+		stroke-width="0.0"
+		stroke-linejoin="round"
+		stroke-linecap="square"
+		d="M5608370.00,7872283.00C5892677.50,7872283.00,6123153.50,8102759.50,6123153.50,8387066.00C6123153.50,8671372.00,5892677.50,8901849.00,5608370.00,8901849.00C5324062.50,8901849.00,5093586.00,8671372.00,5093586.00,8387066.00C5093586.00,8102759.50,5324062.50,7872283.00,5608370.00,7872283.00z"/>
+	<path
+		fill="#FFFFFF"
+		stroke="#00ADFF"
+		fill-opacity="1.000"
+		stroke-opacity="1.000"
+		fill-rule="nonzero"
+		stroke-width="0.0"
+		stroke-linejoin="round"
+		stroke-linecap="square"
+		d="M9906240.00,7872282.00C10190546.00,7872282.00,10421022.00,8102758.50,10421022.00,8387066.00C10421022.00,8671373.00,10190546.00,8901850.00,9906240.00,8901850.00C9621933.00,8901850.00,9391457.00,8671373.00,9391457.00,8387066.00C9391457.00,8102758.50,9621933.00,7872282.00,9906240.00,7872282.00z"/>
+	<path
+		fill="#FBF7FF"
+		stroke="#00ADFF"
+		fill-opacity="1.000"
+		stroke-opacity="1.000"
+		fill-rule="nonzero"
+		stroke-width="0.0"
+		stroke-linejoin="round"
+		stroke-linecap="square"
+		d="M7793207.00,7872282.00C8077514.50,7872282.00,8307991.00,8102758.50,8307991.00,8387066.00C8307991.00,8671373.00,8077514.50,8901850.00,7793207.00,8901850.00C7508899.50,8901850.00,7278423.50,8671373.00,7278423.50,8387066.00C7278423.50,8102758.50,7508899.50,7872282.00,7793207.00,7872282.00z"/>
+</svg>
